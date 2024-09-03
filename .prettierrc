@@ -1,4 +1,35 @@
 {
+  "printWidth": 80,
+  "useTabs": false,
+  "semi": false,
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "arrowParens": "avoid",
+  "proseWrap": "preserve",
+  "importOrderParserPlugins": [
+    "typescript",
+    "classProperties",
+    "decorators-legacy"
+  ],
+  "importOrder": [
+    "<TYPES>",
+    "<TYPES>^[.]",
+    "",
+    "<BUILTIN_MODULES>",
+    "",
+    "^@nestjs/(.*)$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^(auth|user)(/.*)?$",
+    "",
+    "^(config|guards|schemas|decorators)(/.*)?$",
+    "",
+    "^examples/(.*)$",
+    "",
+    "^[.]"
+  ],
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"]
 }
