@@ -1,1 +1,1 @@
-bun lint-staged --concurrent false
+yarn lint-staged --concurrent false

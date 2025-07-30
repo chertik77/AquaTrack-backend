@@ -23,11 +23,9 @@
     "",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^(auth|user)(/.*)?$",
+    "^(@/modules)(/.*)?$",
     "",
-    "^(config|guards|schemas|decorators)(/.*)?$",
-    "",
-    "^examples/(.*)$",
+    "^(@/common)(/.*)?$",
     "",
     "^[.]"
   ],
