@@ -1,8 +1,17 @@
 import { Module } from '@nestjs/common'
-import { ConfigModule } from '@nestjs/config'
+
+import { dotenvLoader, TypedConfigModule } from 'nest-typed-config'
+
+import { RootConfig } from './config'
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true })],
+  imports: [
+    TypedConfigModule.forRoot({
+      isGlobal: true,
+      schema: RootConfig,
+      load: dotenvLoader()
+    })
+  ],
   controllers: [],
   providers: []
 })
