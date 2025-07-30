@@ -2,7 +2,7 @@
   "name": "aqua-track-api",
   "private": true,
   "scripts": {
-    "build": "nest build",
+    "build": "yarn prisma migrate deploy && nest build",
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
     "start": "nest start",
